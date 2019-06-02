@@ -1,5 +1,15 @@
 .jumbotron, 
-#add-train-btn {
+#add-train-btn, 
+.card-header {
     background-color: teal; 
     color: white;
+}
+
+td,
+th {
+    text-align: center;
+}
+
+#train-table {
+    margin: 0px;
 }

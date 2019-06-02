@@ -7,16 +7,13 @@
   <meta charset="UTF-8">
   <title>Train Schedule</title>
 
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <!-- Firebase References -->
   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 
-  <!-- Moment.js Reference -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
   <link rel="stylesheet" href="assets/css/style.css">
@@ -25,10 +22,8 @@
 
 <body>
 
-  <!-- Employee Tracker -->
   <div class="container">
 
-    <!-- Jumbotron -->
     <div class="jumbotron">
       <h1 class="text-center">Train Schedule</h1>
       <h3 class="text-center">Ticket inspectors. You’ve got to hand it to them…</h3>
@@ -38,7 +33,6 @@
 
       <div class="col-md-12">
 
-        <!-- Current Employees-->
         <div class="card mb-4">
           <div class="card-header">Current Train Schedule</div>
           <div class="card-body">
@@ -62,28 +56,26 @@
 
     <div class="row">
       <div class="col-md-12">
-        <!-- Add Employee  -->
         <div class="card mb-4">
           <div class="card-header">Add Train</div>
           <div class="card-body">
 
-            <!-- Entry Form -->
             <form>
               <div class="form-group">
                 <label for="train-name-input">Train Name</label>
-                <input class="form-control" id="train-name-input" placeholder="Choo Choo" type="text">
+                <input class="form-control" id="train-name-input" type="text">
               </div>
               <div class="form-group">
                 <label for="destination-input">Destination</label>
-                <input class="form-control" id="destination-input" placeholder="Milwaukee, WI" type="text">
+                <input class="form-control" id="destination-input" type="text">
               </div>
               <div class="form-group">
                 <label for="first-train-input">First Train Time (HH:mm - military time)</label>
-                <input class="form-control" id="first-train-input" placeholder="" type="text">
+                <input class="form-control" id="first-train-input" type="text">
               </div>
               <div class="form-group">
                 <label for="frequency-input">Frequency (min)</label>
-                <input class="form-control" id="frequency-input" placeholder="" type="text">
+                <input class="form-control" id="frequency-input" type="text">
               </div>
               <button class="btn btn-primary" id="add-train-btn">Submit</button>
             </form>
@@ -95,7 +87,6 @@
 
   </div>
 
-  <!-- JavaScript -->
   <script src="assets/javascript/logic.js"></script>
 
 </body>
